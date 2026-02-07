@@ -25,6 +25,8 @@ def login(username, password):
         print("Login Successful")
     else:
         print("Invalid Credentials")        
+def add_book(book_name):
+    print("Added book:", book_name)
 
 add_book("Python Programming")
 add_book("Data Structures")
