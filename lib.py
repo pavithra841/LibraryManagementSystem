@@ -1,4 +1,4 @@
-# Library Management System - Basic Version
+
 
 library = []
 
@@ -14,7 +14,18 @@ def view_books():
         for book in library:
             print("-", book)
 
-# Sample usage
+
+def issue_book(book_name):
+    if book_name in library:
+        print("Book issued:", book_name)
+    else:
+        print("Book not available")
+def login(username, password):
+    if username == "admin" and password == "1234":
+        print("Login Successful")
+    else:
+        print("Invalid Credentials")        
+
 add_book("Python Programming")
 add_book("Data Structures")
 
